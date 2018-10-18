@@ -36,7 +36,11 @@ L.tileLayer(tileURL, {
 var boundaryLayer = L.geoJson().addTo(map);
 
 var myStyle = {
-    "color": '#E82C0C',
+    // "color": '#E82C0C',
+    //"color": '#FFA195',
+    "color":'#ff8585',
+    "color": '#ffcfcf',
+    "weight": 2.5,
     "fillOpacity": 0,
 };
 
