@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NYC Boundaries with Census tracts</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Load Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" rel="stylesheet">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    
+  </head>  
+  <body>
+    <div id="map"></div>
+    
+    <div class="overlay">
+      <select class="boundary-picker">
+        <option>Pick a boundary</option>
+        <option value="https://data.cityofnewyork.us/resource/7t3b-ywvw.geojson">Boroughs</option>
+        <option value="https://data.cityofnewyork.us/resource/ve3w-z72j.geojson">Council Districts</option>
+        <option value="https://data.cityofnewyork.us/resource/jp9i-3b7y.geojson">Community Districts</option>
+        <option value="https://data.cityofnewyork.us/resource/q2z5-ai38.geojson">Neighborhood Tabulation Areas</option>
+        <option value="https://data.cityofnewyork.us/resource/afns-vxeu.geojson">State Senate Districts</option>
+        <option value="https://data.cityofnewyork.us/resource/qbgu-kv2h.geojson">State Assembly Districts</option>
+        <option value="https://data.cityofnewyork.us/resource/mi5z-t7dx.geojson">Municipal Court Districts</option>
+        <option value="https://data.cityofnewyork.us/resource/cuae-wd7h.geojson">School Districts</option>
+        <option value="https://data.cityofnewyork.us/resource/54w3-cqui.geojson">FDNY Fire Battalions</option>
+        <option value="https://data.cityofnewyork.us/resource/bst7-5464.geojson">FDNY Fire Companies</option>
+        <option value="https://data.cityofnewyork.us/resource/kmub-vria.geojson">NYPD Police Precincts</option>
+        <option value="https://data.cityofnewyork.us/resource/5rqd-h5ci.geojson">NYPD Police Sectors</option>
+        <option value="https://data.cityofnewyork.us/resource/ik8s-syzs.geojson">DSNY Sanitation Sections</option>
+        <option value="https://data.cityofnewyork.us/resource/5kq4-s64x.geojson">DSNY Sanitation Frequencies</option>
+        <option value="https://data.cityofnewyork.us/resource/m3cb-f9jj.geojson">NYCHA Partnership Zones</option>
+        <option value="https://data.cityofnewyork.us/resource/ith2-q832.geojson">Public Use Microdata Areas</option>
+        <option value="https://cdn.glitch.com/ef5a3f48-723b-4318-8cf4-fd1ebeafdf77%2FnycZip.geojson?1538743147226">Zip Codes</option>
+        <option value="https://data.cityofnewyork.us/resource/miue-f5mc.geojson">US Congressional Districts</option>
+      </select>
+    </div>
+    
+    <!-- Load Leaflet library -->
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+    <!-- Load Promises polyfill -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+    <!-- Load Fetch polyfill -->
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.4/fetch.js"></script>
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </body>
+  
+</html>
