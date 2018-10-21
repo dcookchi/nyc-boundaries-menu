@@ -73,7 +73,6 @@ function loadData(boundary) {
 }
 
 /*
-
 // function for loading all the boundary (polygon) data
 // receives input from the event listener
 function loadData(boundaries) {
@@ -109,10 +108,8 @@ function getCheckedBoundaries(){
   // return the array to filter/load the corresponding data
   return checkedBoundaries;
 }
-
 // initialize checkboxes
 var boundaryCheckboxes = document.querySelectorAll('.boundary-checkbox');
-
 // add event listener which will call the load data function and the getChecked function
 boundaryCheckboxes.forEach(function (boundaryCheckbox) {
   boundaryCheckbox.addEventListener('change', function () {
